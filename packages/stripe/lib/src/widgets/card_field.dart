@@ -277,7 +277,7 @@ class _MethodChannelCardFieldState extends State<_MethodChannelCardField> {
         onPlatformViewCreated: onPlatformViewCreated,
       );
     } else {
-      throw UnsupportedError('Unsupported platform view');
+      throw UnsupportedError('Unsupported platform view - test');
     }
     final constraints = widget.constraints ??
         const BoxConstraints.expand(height: kCardFieldDefaultHeight);

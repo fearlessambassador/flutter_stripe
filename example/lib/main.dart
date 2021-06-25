@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-import 'package:stripe_example/.env.dart';
+// TODO REINCLUDE
+//import 'package:stripe_example/.env.dart';
 import 'screens/screens.dart';
 
 import 'widgets/dismiss_focus_overlay.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Stripe.publishableKey = stripePublishableKey;
+  Stripe.publishableKey = 'pk_live_FEeHM8uCahT93zxN4qTGeqIZ00uDFvm20h';
+  // TODO REINCLUDE
+  //Stripe.publishableKey = stripePublishableKey;
   Stripe.merchantIdentifier = 'MerchantIdentifier';
   runApp(App());
 }
